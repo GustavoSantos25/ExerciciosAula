@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
     val pessoa1 = Pessoa("Gustavo", 1)
     val pessoa2 = Pessoa("Camila", 1)
 
@@ -17,6 +17,15 @@ fun main(){
 
     var listAlunos = listOf(aluno1, aluno2, aluno3, aluno4)
 
-    println("Contém aluno: ${ listAlunos.contains(aluno5)}")
+    println("Contém aluno: ${listAlunos.contains(aluno5)}")
 
+    val funcionario1 = Funcionario("Gustavo", 1)
+    val funcionario2 = Funcionario("Camila", 2)
+    val funcionario3 = Funcionario("Michelle", 3)
+    val funcionario4 = Funcionario("Vitor", 4)
+    val funcionario5 = Funcionario("João", 4)
+
+    var listFuncionario = listOf(funcionario1, funcionario2, funcionario3, funcionario4)
+
+    println("Contém funcionario: ${listFuncionario.contains(funcionario5)}")
 }
