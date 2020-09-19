@@ -9,4 +9,14 @@ fun main(){
 
     println("Resultado 1: ${coca1.equals(coca2)}")
 
+    val aluno1 = Aluno("Gustavo", 1)
+    val aluno2 = Aluno("Camila", 2)
+    val aluno3 = Aluno("Michelle", 3)
+    val aluno4 = Aluno("Vitor", 4)
+    val aluno5 = Aluno("João", 4)
+
+    var listAlunos = listOf(aluno1, aluno2, aluno3, aluno4)
+
+    println("Contém aluno: ${ listAlunos.contains(aluno5)}")
+
 }
