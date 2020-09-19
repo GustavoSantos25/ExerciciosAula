@@ -1,6 +1,7 @@
 class Pessoa(var nome: String, var RG: Int){
-    override fun equals(other: Pessoa): Boolean {
-        if (this.RG == other.RG) return true
-        return true
+
+    override fun equals(other: Any?): Boolean {
+        if (other == null || other !is Pessoa) return false
+        return RG == other.RG
     }
 }
